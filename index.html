@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="container">
+    <!---------Product Goes Here--------->
+    <section class="product-container">
+
+      <!---------Product start--------->
+      <section class="product pcc">
+        <img src="./imgs/product-1.png" alt="iPhone-11">
+        <h2>iPhone-11 128GB Black</h2>
+      </section>
+      <!---------Product stop--------->
+
+      <!---------Quantity and Price start--------->
+      <section class="qntt-price pcc">
+
+        <!---------quantity start--------->
+        <section class="quantity pcc">
+          <button type="button" onclick="wantedProduct ('phn', false)" class="d-i-common dec">&#8722;</button>
+          <input type="text" name="Quntity" id="phn-quantity" value="1">
+          <button type="button" onclick="wantedProduct ('phn', true)" class="d-i-common inc">+</button>
+        </section>
+        <!---------quantity stop--------->
+
+        <!---------Price start--------->
+        <section class="price pcc">
+          <h3 id="phn-price">$1219</h3>
+          <img src="./imgs/remove.png" alt="remove">
+        </section>
+        <!---------Price stop--------->
+
+      </section>
+      <!---------Quantity and Price stop--------->
+
+    </section>
+
+    <section class="product-container">
+
+      <!---------Product start--------->
+      <section class="product pcc">
+        <img src="./imgs/product-2.png" alt="iPhone-11">
+        <h2>iPhone 11 Silicone Case - Black</h2>
+      </section>
+      <!---------Product stop--------->
+
+      <!---------Quantity and Price start--------->
+      <section class="qntt-price pcc">
+
+        <!---------quantity start--------->
+        <section class="quantity pcc">
+          <button type="button" onclick="wantedProduct ('case', false)" class="d-i-common dec">&#8722;</button>
+          <input type="text" name="Quntity" id="case-quantity" value="1">
+          <button type="button" onclick="wantedProduct ('case', true)" class="d-i-common inc">+</button>
+        </section>
+        <!---------quantity stop--------->
+
+        <!---------Price start--------->
+        <section class="price pcc">
+          <h3 id="case-price">$59</h3>
+          <img src="./imgs/remove.png" alt="remove">
+        </section>
+        <!---------Price stop--------->
+
+      </section>
+      <!---------Quantity and Price stop--------->
+
+    </section>
+    <!---------Product Stop Here--------->
+
+    <!---------Total Start Here---------->
+    <section class="total-container">
+      <article class="total-common">
+        <h2>Subtotal:</h2>
+        <h3 id="total-product-price">$1278</h3>
+      </article>
+      <article class="total-common">
+        <h2>Tax:</h2>
+        <h3 id="tax">$0</h3>
+      </article>
+      <article class="total-common">
+        <h2>Total:</h2>
+        <h3 id="total">$1219</h3>
+      </article>
+    </section>
+    <!---------Total Stop Here---------->
+
+    <button type="button" class="btn">Check Out</button>
+  </main>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>

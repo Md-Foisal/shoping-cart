@@ -1,0 +1,137 @@
+/*--------Reset Default Typography--------*/
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*---------Root Unit Reset---------*/
+html {
+  font-size: 62.5%;
+}
+/*---------Body Reset---------*/
+body {
+  padding: 10rem;
+}
+/*---------Container Goes Here---------*/
+.container {
+  padding: 6rem 0;
+  background: #F6F5FA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*----------Product Container----------*/
+.product-container {
+  width: calc(100% - 20rem);
+  padding: 2rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+/*---------Common design for product and qntt-price----------*/
+.pcc {
+  width: calc(100% /2);
+  display: flex;
+  align-items: center;
+}
+/*----------Product start----------*/
+.product img {
+  width: calc(100% / 5);
+  margin-right: 4rem;
+}
+.product h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+/*----------Product stop----------*/
+
+/*----------Quantity and price start----------*/
+.qntt-price {
+  justify-content: space-between;
+}
+/*----------Quantity and price stop----------*/
+
+/*---------quantity start--------*/
+.quantity input {
+  width: calc(100% - 70%);
+  background: #F6F5FA;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+}
+.quantity input:focus {
+  outline: .5rem solid #00804b;
+}
+.d-i-common {
+  width: calc(100% - 65%);
+  background: #fff;
+  cursor: pointer;
+  padding: 0 1.2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  border: none;
+}
+.dec {
+  text-align: right;
+}
+.inc {
+  text-align: left;
+}
+/*---------quantity stop--------*/
+
+/*---------price start--------*/
+.price {
+  justify-content: space-around;
+}
+.price h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.price img {
+  width: calc(100% / 8);
+}
+/*---------price stop--------*/
+
+/*---------total container---------*/
+.total-container {
+  width: calc(100% - 20rem);
+  padding: 2rem 6rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
+}
+.total-common {
+  display: flex;
+  justify-content: space-between;
+}
+.total-common h2, .total-common h3 {
+  font-weight: lighter;
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+.btn {
+  padding: 1.5rem 4rem;
+  background: rgb(1, 153, 82);
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: .5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 10rem;
+}
+.btn:hover {
+  background: #027733;
+}
+.btn:focus {
+  outline: .3rem solid #5febaa;
+}
